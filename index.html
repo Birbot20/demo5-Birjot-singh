@@ -5,28 +5,190 @@
     <title>My BCIT Project</title>
     <meta name="comp1800 template" content="My 1800 App">
 
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Other libraries go here -->
 
 </head>
 
 <body>
 
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
-    <!-- Stuff for body goes here -->
+    <nav class="navbar navbar-expand-sm bg-primary">
+        <div class="container-fluid">
 
+            <a class="navbar-brand text-white" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ordWQJIJJ_7VcmIbBynoUaG-BbYpaDf3czTYRPlPnyRlsTSvDrDMcHlbD-COo-5xPdRe&s" height="36">
+                Hike App
+            </a>
 
-    <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
-    <!---------------------------------------------->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
 
-    <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active text-white" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My account
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    My hikes
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Settings
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search" aria-label="Search">
+
+                    <button class="btn btn-light" type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="px-3 py-5 my-2 mx-2 text-center bg-info-subtle">
+
+        <img class="d-block mx-auto mb-4"
+            src="https://images.pexels.com/photos/1453488/pexels-photo-1453488.jpeg"
+            alt="Hiking"
+            width="100"
+            height="70">
+
+        <h1 class="display-5 fw-bold text-primary">
+            Let's Hike Together!
+        </h1>
+
+        <div class="col-lg-6 mx-auto">
+
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+                <button type="button"
+                    class="btn btn-primary btn-lg px-4 gap-3">
+                    Explore Hikes
+                </button>
+
+                <button type="button"
+                    class="btn btn-outline-primary btn-lg px-4">
+                    Login
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <h1 class="mx-5 mb-4 text-primary">
+        Popular Hikes
+    </h1>
+
+    <div class="card-group mx-5">
+
+        <div class="card">
+
+            <img src="https://t3.ftcdn.net/jpg/06/46/18/76/240_F_646187613_JUoNilbXZvy69uaU6YidKcTKFc893qPz.jpg"
+                class="card-img-top"
+                alt="Mountain hike">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Mountain Hike
+                </h5>
+
+                <p class="card-text">
+                    Explore a beautiful mountain trail.
+                </p>
+
+                <button type="button" class="btn btn-primary">
+                    View Hike
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+
+            <img src="https://t4.ftcdn.net/jpg/01/41/78/19/240_F_141781967_ovxxuJlRwWWMAgfndoz7WbHSddwT6TTl.jpg"
+                class="card-img-top"
+                alt="Beautiful hike">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Beautiful Hike
+                </h5>
+
+                <p class="card-text">
+                    Enjoy a scenic outdoor adventure.
+                </p>
+
+                <button type="button" class="btn btn-primary">
+                    View Hike
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+
+            <img src="https://t3.ftcdn.net/jpg/05/15/85/26/240_F_515852675_Ptw7necvlTMo4HBQbu60g68E2FBCF8FF.jpg"
+                class="card-img-top"
+                alt="Photo hike">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    Photo Hike
+                </h5>
+
+                <p class="card-text">
+                    Find great views and hiking locations.
+                </p>
+
+                <button type="button" class="btn btn-primary">
+                    View Hike
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
 
 </body>
 
